@@ -1,14 +1,14 @@
-import { Box } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from '@mui/material/Button';
 import "./TabOne.css"
+import PropTypes from 'prop-types';
 // {
 //     categoryName: "Non-AMASI Members",
 //     currency: "INR",
 //     amount: "12980"
 // },
 
-export default function TabOne({category, handleChange, handleAmount}) {
+const TabOne = ({category, handleChange, handleAmount}) => {
     const [selectedCheckbox, setSelectedCheckbox] = useState('');
 
     const handleCheckboxChange = (event) => {
@@ -43,3 +43,10 @@ export default function TabOne({category, handleChange, handleAmount}) {
     </div>
     )
 }
+TabOne.propTypes = {
+  category: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  handleAmount: PropTypes.func.isRequired
+};
+
+export default TabOne
