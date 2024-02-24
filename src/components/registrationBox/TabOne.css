@@ -1,0 +1,32 @@
+.tab-one-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-tab-one{
+    background-color: rgb(214, 214, 214);
+    padding: 2rem;
+    width: 60%;
+}
+.tab-one-options{
+    background-color: rgb(253, 253, 253);
+    margin: 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.category-name{
+    margin-left: 1rem;
+}
+.category-price{
+    display: flex;
+    justify-content: space-between;
+}
+.category-price span{
+    margin-left: 10px;
+}
+@media screen and (max-width: 850px){
+    .inner-tab-one{
+        width: 90%;
+    }
+}
